@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: white;
+  font-size: small;
+}
+p:not(.controls p) {
+  padding: 10px 0;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game_box {
+  height: 478px;
+  width: 478px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 280px 188px;
+  grid-template-rows: 462px;
+  align-content: center;
+  justify-content: center;
+}
+
+.main {
+  border: solid white 1px;
+}
+
+.info {
+  justify-self: center;
+  width: 161px;
+}
+.info > :first-child {
+  font-size: xx-large;
+}
+
+.level,
+.score,
+.status,
+.controls {
+  border: solid 1px white;
+}
+
+.level,
+.score {
+  height: 24px;
+  color: white;
+
+  padding: 2px 0px 2px 9px;
+}
+.status {
+  height: 95px;
+  color: white;
+
+  padding: 20px 0px 2px 9px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 104px;
+}
+.controls p {
+  padding-left: 7px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+}
+.main div {
+  border: solid 1px black;
+}
+
+/* .block {
+  border: solid 1px black;
+} */
